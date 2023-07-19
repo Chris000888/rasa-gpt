@@ -17,6 +17,11 @@ git clone https://github.com/Chris000888/rasa-gpt.git
 
 ## Running the system
 
+First, go inside the cloned repository
+
+```bash 
+cd rasa-gpt
+```
 
 You have to run this command only one time, for building the system an lauching it
 
@@ -40,7 +45,6 @@ docker-compose stop
 To check the logs do :
 
 ```bash
-cd rasa-gpt
 docker-compose logs -f --tail 20
 ```
 
