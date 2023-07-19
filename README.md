@@ -56,6 +56,11 @@ To delete all the created containers, volumes and images do
 docker-compose down -v --rm all
 ```
 
+## Configuration
+
+To make the bot use ChatGPT model, you will have to set your API_KEY in the
+```./rasa-app-data/actions/actions.py``` file.
+
 ## Demo
 
 To test the bot, just open the ```./rasa-app-data/templates/chat.html``` file
