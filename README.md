@@ -65,6 +65,7 @@ To make the bot use ChatGPT model, you will have to set your API_KEY in the
 ```./rasa-app-data/actions/actions.py``` file.
 
 You may have to restart the containers after your changes:
+
 ```bash
 docker-compose restart
 ```
