@@ -1,4 +1,4 @@
-FROM rasa/rasa-sdk:3.1.0
+FROM rasa/rasa:3.1.0-full
 
 LABEL MAINTAINER="christopherdato08@gmail.com"
 
