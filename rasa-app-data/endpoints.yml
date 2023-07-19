@@ -14,7 +14,7 @@ action_endpoint:
   # the action_server contained in the url is the name of the docker service 
   # for the action container. So if you change the name of the docker service, 
   # you might change the name in the url also.
-  url: "http://localhost:5055/webhook"
+  url: "http://action_server:5055/webhook"
 
 # Tracker store which is used to store the conversations.
 # By default the conversations are stored in memory.
