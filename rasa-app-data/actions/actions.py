@@ -1,9 +1,4 @@
-import io
-import os
 import openai
-import random
-import requests
-import pandas as pd
 from rasa_sdk import Action, Tracker 
 from typing import Any, Text, Dict, List
 from rasa_sdk.executor import CollectingDispatcher
