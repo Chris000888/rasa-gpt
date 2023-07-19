@@ -19,16 +19,15 @@ git clone https://github.com/Chris000888/rasa-gpt.git
 
 First, go inside the cloned repository
 
-```bash 
+```bash
 cd rasa-gpt
 ```
 
 You have to run this command only one time, for building the system an lauching it
 
-```bash 
+```bash
 docker-compose up -d --build
 ```
-
 
 To launch the system, in the project directory, just do :
 
