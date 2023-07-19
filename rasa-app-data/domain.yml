@@ -1,0 +1,39 @@
+version: "3.1"
+
+intents:
+  - thanks
+  - goodbye
+  - who_are_you
+  - greet
+
+actions:
+  - action_default
+
+responses:
+  utter_presentation:
+  - text: "Je suis un bot créé avec RASA et ayant l'intelligence de ChatGPT. En quoi puis-je vous aider ?"
+
+  utter_goodbye:
+  - text: "Je suis ravi d'avoir pu vous être utile. Au plaisir de vous revoir 🙃!"
+  - text: "A bientôt 🙃!"
+  - text: "A plus 🙃!"
+  - text: "Ciao 🙃!"
+  - text: "Au revoir 🙃!"
+
+  utter_thanks:
+  - text: "Je suis ravi d'avoir pu vous être aider."
+  - text: "Je vous en prie! Avez-vous beosin d'autre chose ?"
+  - text: "Tout le plaisir est pour moi!"
+  - text: "You're welcome!"
+  - text: "Autre chose ?"
+
+  utter_greet:
+  - text: "Bonjour 😁! En quoi puis-je vous aider ?"
+  - text: "Bonsoir 😁! En quoi puis-je vous être utile ?"
+  - text: "Salut 😁! Que puis-je faire pour vous ?"
+  - text: "Coucou 😁! En quoi puis-je vous aider ?"
+  - text: "Hello 😁! En quoi puis-je vous aider ?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,29 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - bonjour
+    - hello
+    - salut
+    - hi
+    - bonsoir
+    - salutations
+    - hey
+    - coucou
+- intent: who_are_you
+  examples: |
+    - qui es-tu
+    - who are you
+- intent: goodbye
+  examples: |
+    - aurevoir
+    - à bientôt
+    - bonne nuit
+    - bye
+    - ciao
+    - à plus
+- intent: thanks
+  examples: |
+    - merci
+    - merci beaucoup
+    - je te remercie

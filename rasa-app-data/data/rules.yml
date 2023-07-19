@@ -1,0 +1,27 @@
+version: "3.1"
+
+rules:
+- rule: Respond like greetings
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: out-of-scope
+  steps:
+  - intent: nlu_fallback
+  - action: action_default
+
+- rule: Respond to who are you questions
+  steps:
+  - intent: who_are_you
+  - action: utter_presentation
+
+- rule: Respond to thanks intention
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: Respond to goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

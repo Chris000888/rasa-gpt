@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories:
+  - story: greetings
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: story_goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  
+  - story: story_thanks
+    steps:
+      - intent: thanks
+      - action: utter_thanks
+  
+  - story: who_are_you_path
+    steps:
+      - intent: who_are_you
+      - action: utter_presentation
+
+  - story: nlu_fallback_path
+    steps:
+      - intent: nlu_fallback
+      - action: action_default

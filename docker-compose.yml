@@ -1,0 +1,26 @@
+version: "3.0"
+
+services:
+  rasa:
+    image: rasa/rasa:3.1.0-full
+    container_name: my_rasa_container
+    build:
+      context: ./
+      dockerfile: rasa.Dockerfile
+    ports:
+      - 5005:5005
+    volumes:
+      - ./rasa-app-data:/app/
+
+  action_server:
+    image: rasa/rasa-sdk:3.1.0
+    container_name: my_rasa_action_container
+    build:
+      context: ./
+      dockerfile: rasa-actions.Dockerfile
+    ports:
+    - "5055:5055"
+    volumes:
+    - ./rasa-app-data/actions:/app/actions
+    depends_on:
+      - rasa
